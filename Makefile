@@ -1,7 +1,7 @@
-all: Lab1
+all: App
 
 Lab1: libmylib.a UserInterface.o
-	g++ -o Lab1 UserInterface.o -L. -lmylib
+	g++ -o App UserInterface.o -L. -lmylib
 	
 libmylib.a: Car.o Database.o
 	ar cr libmylib.a Car.o Database.o
